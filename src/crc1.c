@@ -1,6 +1,6 @@
 #include "crc_counter/crc1.h"
 
-uint8_t crc1(uint8_t* data, uint64_t len)
+uint8_t crc1(uint8_t const* data, uint64_t len)
 {
     uint8_t crc = 0x00;
     while(len--)
