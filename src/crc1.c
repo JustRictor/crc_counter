@@ -12,5 +12,5 @@ uint8_t crc1(uint8_t* data, uint64_t len)
                              :   crc << 1 ;
         }
     }
-    return crc;
+    return crc & 0x1;
 }
