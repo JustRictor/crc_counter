@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-option(ENABLE_TESTS "Enable testing for lib" ON)
+option(ENABLE_TESTS "Enable testing for lib" OFF)
 
 if(ENABLE_TESTS)
     project(crc_counter LANGUAGES CXX C)
