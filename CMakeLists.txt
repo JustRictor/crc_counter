@@ -15,10 +15,12 @@ include_directories(include)
 set(HEADERS_CRC_COUNTER
     include/crc_counter/crc_counter.h
     include/crc_counter/crc_alg/crc1.h
+    include/crc_counter/crc_alg/crc3_rohc.h
     )
 
 set(SOURCES_CRC_COUNTER
     src/crc_alg/crc1.c
+    src/crc_alg/crc3_rohc.c
     )
 
 add_library(crc_counter STATIC ${HEADERS_CRC_COUNTER} ${SOURCES_CRC_COUNTER})

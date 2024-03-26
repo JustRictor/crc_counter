@@ -5,5 +5,8 @@ extern "C" {
 
 TEST_CASE("Check for crc1 algorithm", "[check]")
 {
-    CHECK( crc1( (uint8_t*)"123456789", 9 ) == 0x01);
+    uint8_t str[] = "123456789";
+    uint64_t strLen = sizeof( str ) - 1;
+    CHECK( crc1     ( str, strLen ) == 0x01 );
+    CHECK( crc3_rohc( str, strLen ) == 0x06 );
 }
