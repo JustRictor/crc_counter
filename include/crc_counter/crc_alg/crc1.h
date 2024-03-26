@@ -10,7 +10,7 @@
  * \param data [in] data array
  * \param len  [in] array len
  * \return crc
- * \note crc1 poly specification
+ * \note poly specification
  *      * Name:     CRC-1
  *      * Width:    1
  *      * Poly:     0x01

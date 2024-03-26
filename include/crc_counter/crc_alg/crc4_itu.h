@@ -6,11 +6,11 @@
 #define CRC4_ITU_POLY_REV 0xC
 
 /**
- * \brief crc1 algorithm with poly 0x01
+ * \brief crc4 algorithm with poly 0x03
  * \param data [in] data array
  * \param len  [in] array len
  * \return crc
- * \note crc1 poly specification
+ * \note poly specification
  *      * Name:     CRC-4/ITU
  *      * Width:    4
  *      * Poly:     0x03

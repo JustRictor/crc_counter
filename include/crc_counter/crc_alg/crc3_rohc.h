@@ -6,11 +6,11 @@
 #define CRC3_ROHC_POLY_REV 0x6
 
 /**
- * \brief crc1 algorithm with poly 0x01
+ * \brief crc3 algorithm with poly 0x03
  * \param data [in] data array
  * \param len  [in] array len
  * \return crc
- * \note crc1 poly specification
+ * \note poly specification
  *      * Name:     CRC-3/ROHC
  *      * Width:    3
  *      * Poly:     0x03
