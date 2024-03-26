@@ -1,4 +1,4 @@
-#include "crc_counter/crc1.h"
+#include "crc_counter/crc_alg/crc1.h"
 
 uint8_t crc1(uint8_t const* data, uint64_t len)
 {
