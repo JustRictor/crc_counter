@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define CRC1_POLY_REV 0x1
-
 /**
  * \brief crc1 algorithm with poly 0x01
  * \param data [in] data array

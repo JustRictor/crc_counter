@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define CRC4_ITU_POLY_REV 0xC
-
 /**
  * \brief crc4 algorithm with poly 0x03
  * \param data [in] data array

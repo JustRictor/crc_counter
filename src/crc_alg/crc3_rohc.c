@@ -1,4 +1,5 @@
 #include "crc_counter/crc_alg/crc3_rohc.h"
+#include "crc_counter/crc_polynomes.h"
 
 uint8_t crc3_rohc(uint8_t const* data, uint64_t len)
 {

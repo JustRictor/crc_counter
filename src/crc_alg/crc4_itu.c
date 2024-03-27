@@ -1,4 +1,5 @@
 #include "crc_counter/crc_alg/crc4_itu.h"
+#include "crc_counter/crc_polynomes.h"
 
 uint8_t crc4_itu(uint8_t const* data, uint64_t len)
 {

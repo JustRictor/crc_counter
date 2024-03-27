@@ -2,18 +2,15 @@ cmake_minimum_required(VERSION 3.5)
 
 option(ENABLE_TESTS "Enable testing for lib" OFF)
 
-if(ENABLE_TESTS)
-    project(crc_counter LANGUAGES CXX C)
-    set(CMAKE_CXX_STANDARD 11)
-    set(CMAKE_CXX_STANDARD_REQUIRED ON)
-else()
-    project(crc_counter LANGUAGES C)
-endif()
+project(crc_counter LANGUAGES CXX C)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include)
 
 set(HEADERS_CRC_COUNTER
     include/crc_counter/crc_counter.h
+    include/crc_counter/crc_polynomes.h
     include/crc_counter/crc_alg/crc1.h
     include/crc_counter/crc_alg/crc3_rohc.h
     include/crc_counter/crc_alg/crc4_itu.h

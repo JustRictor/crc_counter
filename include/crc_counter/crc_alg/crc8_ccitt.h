@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define CRC8_POLY 0x07
-
 /**
  * \brief crc8 algorithm with poly 0x07
  * \param data [in] data array
