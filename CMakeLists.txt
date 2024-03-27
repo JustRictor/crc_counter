@@ -11,6 +11,9 @@ include_directories(include)
 set(HEADERS_CRC_COUNTER
     include/crc_counter/crc_counter.h
     include/crc_counter/crc_polynomes.h
+    # ----------- tools ----------- #
+    include/crc_counter/tools/calc_crc_table.h
+    # ----------- algs  ----------- #
     include/crc_counter/crc_alg/crc1.h
     include/crc_counter/crc_alg/crc3_rohc.h
     include/crc_counter/crc_alg/crc4_itu.h
@@ -18,6 +21,9 @@ set(HEADERS_CRC_COUNTER
     )
 
 set(SOURCES_CRC_COUNTER
+    # ----------- tools ----------- #
+    src/tools/calc_crc_table.c
+    # ----------- algs  ----------- #
     src/crc_alg/crc1.c
     src/crc_alg/crc3_rohc.c
     src/crc_alg/crc4_itu.c
