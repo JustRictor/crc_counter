@@ -43,7 +43,8 @@ if(ENABLE_TESTS)
     FetchContent_MakeAvailable(Catch2)
 
     set(TESTS_SOURCES
-            test/check_crc_test.cpp
+            test/test_check_crc.cpp
+            test/test_calc_crc_table.cpp
         )
     add_executable(test ${TESTS_SOURCES})
     target_link_libraries(test PRIVATE
