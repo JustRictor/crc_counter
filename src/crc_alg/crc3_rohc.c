@@ -9,7 +9,7 @@ uint8_t crc3_rohc(uint8_t const* data, uint64_t len)
         crc ^= *data++;
         for(uint8_t i = 0; i < 8; i++)
         {
-            crc = crc & 0x01 ? ( crc >> 1 ) ^ CRC3_ROHC_POLY_REV
+            crc = crc & 0x01 ? ( crc >> 1 ) ^ __CRC3_ROHC_POLY_REV
                              :   crc >> 1 ;
         }
     }

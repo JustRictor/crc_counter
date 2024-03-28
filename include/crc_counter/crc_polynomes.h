@@ -1,16 +1,91 @@
 #ifndef __CRC_POLYNOMES_H_
 #define __CRC_POLYNOMES_H_
 
-#define CRC1_POLY     0x1
-#define CRC1_POLY_REV 0x1
+#define __CRC1_POLY     0x1
+#define __CRC1_POLY_REV 0x1
 
-#define CRC3_ROHC_POLY     0x3
-#define CRC3_ROHC_POLY_REV 0x6
+#define __CRC3_ROHC_POLY     0x3
+#define __CRC3_ROHC_POLY_REV 0x6
 
-#define CRC4_ITU_POLY     0x3
-#define CRC4_ITU_POLY_REV 0xC
+#define __CRC4_ITU_POLY     0x3
+#define __CRC4_ITU_POLY_REV 0xC
 
-#define CRC8_CCITT_POLY     0x07
-#define CRC8_CCITT_POLY_REV 0xE0
+#define __CRC5_EPC_POLY     0x09
+#define __CRC5_EPC_POLY_REV 0x12
+
+#define __CRC5_ITU_POLY     0x15
+#define __CRC5_ITU_POLY_REV 0x15
+
+#define __CRC5_USB_POLY     0x05
+#define __CRC5_USB_POLY_REV 0x14
+
+#define __CRC6_ITU_POLY     0x03
+#define __CRC6_ITU_POLY_REV 0x30
+
+#define __CRC7_POLY     0x09
+#define __CRC7_POLY_REV 0x48
+
+#define __CRC8_CCITT_POLY     0x07
+#define __CRC8_CCITT_POLY_REV 0xE0
+
+#define __CRC8_DALLAS_POLY     0x31
+#define __CRC8_DALLAS_POLY_REV 0x8C
+
+#define __CRC8_DVB_S2_POLY     0xD5
+#define __CRC8_DVB_S2_POLY_REV 0xAB
+
+#define __CRC8_SAEJ1850_POLY     0x1D
+#define __CRC8_SAEJ1850_POLY_REV 0xB8
+
+#define __CRC10_POLY     0x233
+#define __CRC10_POLY_REV 0x331
+
+#define __CRC11_POLY     0x385
+#define __CRC11_POLY_REV 0x50E
+
+#define __CRC12_POLY     0x80F
+#define __CRC12_POLY_REV 0xF01
+
+#define __CRC15_CAN_POLY     0x4599
+#define __CRC15_CAN_POLY_REV 0x4CD1
+
+#define __CRC16_IBM_POLY     0x8005
+#define __CRC16_IBM_POLY_REV 0xA001
+
+#define __CRC16_CCITT_POLY     0x1021
+#define __CRC16_CCITT_POLY_REV 0x8408
+
+#define __CRC16_T10_DIF_POLY     0x8BB7
+#define __CRC16_T10_DIF_POLY_REV 0xEDD1
+
+#define __CRC16_DNP_POLY     0x3D65
+#define __CRC16_DNP_POLY_REV 0xA6BC
+
+#define __CRC24_POLY     0x5D6DCB
+#define __CRC24_POLY_REV 0xD3B6BA
+
+#define __CRC24_RADIX_64_POLY     0x864CFB
+#define __CRC24_RADIX_64_POLY_REV 0xDF3261
+
+#define __CRC30_POLY     0x2030B9C7
+#define __CRC30_POLY_REV 0x38E74301
+
+#define __CRC32_IEEE_POLY     0x04C11DB7
+#define __CRC32_IEEE_POLY_REV 0xEDB88320
+
+#define __CRC32_C_POLY     0x1EDC6F41
+#define __CRC32_C_POLY_REV 0x82F63B78
+
+#define __CRC32_K_POLY     0x741B8CD7
+#define __CRC32_K_POLY_REV 0xEB31D82E
+
+#define __CRC32_Q_POLY     0x814141AB
+#define __CRC32_Q_POLY_REV 0xD5828281
+
+#define __CRC64_ISO_POLY     0x000000000000001B
+#define __CRC64_ISO_POLY_REV 0xD800000000000000
+
+#define __CRC64_ECMA_POLY     0x42F0E1EBA9EA3693
+#define __CRC64_ECMA_POLY_REV 0xC96C5795D7870F42
 
 #endif//__CRC_POLYNOMES_H_

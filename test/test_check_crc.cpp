@@ -10,5 +10,5 @@ TEST_CASE("Check for crc1 algorithm", "[check]")
     CHECK( crc1      ( str, strLen ) == 0x01 );
     CHECK( crc3_rohc ( str, strLen ) == 0x06 );
     CHECK( crc4_itu  ( str, strLen ) == 0x07 );
-    CHECK( crc8_ccitt( str, strLen ) == 0xF4 );
+    CHECK( crc8      ( str, strLen ) == 0xF4 );
 }

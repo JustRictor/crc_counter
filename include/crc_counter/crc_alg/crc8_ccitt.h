@@ -18,6 +18,6 @@
  *      * XorOut:   0x00
  *      * Check:    0xF4
  */
-uint8_t crc8_ccitt(uint8_t const* data, uint64_t len);
+uint8_t crc8(uint8_t const* data, uint64_t len);
 
 #endif//__CRC8_CCITT_H_

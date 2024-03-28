@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 
-#define CRC3_ROHC_POLY_REV 0x6
-
 /**
  * \brief crc3 algorithm with poly 0x03
  * \param data [in] data array
