@@ -17,20 +17,13 @@ bool calc_crc8_table(uint8_t *crcTable,
     for(uint16_t x = 0; x < 256; x++)
     {
         uint8_t crc = x;
-        for(uint8_t i = 0; i < 8; i++)
-        {
-            if (refIn == true)
-            {
-                crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
-                                :   crc >> 1 ;
-            }
-            else//refIn == false
-            {
-                crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
-                                                      :   crc << 1 ;
-            }
+        if (refIn == true) for(uint8_t i = 0; i < 8; i++)
+            crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
+                            :   crc >> 1 ;
+        else for(uint8_t i = 0; i < 8; i++)
+            crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
+                                                  :   crc << 1 ;
         *crcTable++ = crc;
-        }
     }
     return true;
 }
@@ -51,21 +44,14 @@ bool calc_crc16_table(uint16_t *crcTable,
 
     for(uint16_t x = 0; x < 256; x++)
     {
-        uint16_t crc = ( x << (polyBitLen - 8) );
-        for(uint8_t i = 0; i < 8; i++)
-        {
-            if (refIn == true)
-            {
-                crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
-                                :   crc >> 1 ;
-            }
-            else//refIn == false
-            {
-                crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
-                                                      :   crc << 1 ;
-            }
+        uint16_t crc = refIn == true ? x : ( x << (polyBitLen - 8) );
+        if (refIn == true) for(uint8_t i = 0; i < 8; i++)
+            crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
+                            :   crc >> 1 ;
+        else for (uint8_t i = 0; i < 8; i++)
+            crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
+                                                  :   crc << 1 ;
         *crcTable++ = crc;
-        }
     }
     return true;
 }
@@ -86,21 +72,14 @@ bool calc_crc32_table(uint32_t *crcTable,
 
     for(uint16_t x = 0; x < 256; x++)
     {
-        uint32_t crc = ( x << (polyBitLen - 8) );
-        for(uint8_t i = 0; i < 8; i++)
-        {
-            if (refIn == true)
-            {
-                crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
-                                :   crc >> 1 ;
-            }
-            else//refIn == false
-            {
-                crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
-                                                      :   crc << 1 ;
-            }
+        uint32_t crc = refIn == true ? x : ( x << (polyBitLen - 8) );
+        if (refIn == true) for(uint8_t i = 0; i < 8; i++)
+            crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
+                            :   crc >> 1 ;
+        else for (uint8_t i = 0; i < 8; i++)
+            crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
+                                                  :   crc << 1 ;
         *crcTable++ = crc;
-        }
     }
     return true;
 }
@@ -121,21 +100,14 @@ bool calc_crc64_table(uint64_t *crcTable,
 
     for(uint16_t x = 0; x < 256; x++)
     {
-        uint64_t crc = ( x << (polyBitLen - 8) );
-        for(uint8_t i = 0; i < 8; i++)
-        {
-            if (refIn == true)
-            {
-                crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
-                                :   crc >> 1 ;
-            }
-            else//refIn == false
-            {
-                crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
-                                                      :   crc << 1 ;
-            }
+        uint64_t crc = refIn == true ? x : ( x << (polyBitLen - 8) );
+        if (refIn == true) for(uint8_t i = 0; i < 8; i++)
+            crc = (crc & 1) ? ( crc >> 1 ) ^ crcPolynom
+                            :   crc >> 1 ;
+        else for (uint8_t i = 0; i < 8; i++)
+            crc = (crc & (1 << (polyBitLen - 1))) ? ( crc << 1 ) ^ crcPolynom
+                                                  :   crc << 1 ;
         *crcTable++ = crc;
-        }
     }
     return true;
 }
