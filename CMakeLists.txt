@@ -17,6 +17,9 @@ set(HEADERS_CRC_COUNTER
     include/crc_counter/crc_alg/crc1.h
     include/crc_counter/crc_alg/crc3_rohc.h
     include/crc_counter/crc_alg/crc4_itu.h
+    include/crc_counter/crc_alg/crc5_epc.h
+    include/crc_counter/crc_alg/crc5_itu.h
+    include/crc_counter/crc_alg/crc5_usb.h
     include/crc_counter/crc_alg/crc8.h
     )
 
@@ -27,6 +30,9 @@ set(SOURCES_CRC_COUNTER
     src/crc_alg/crc1.c
     src/crc_alg/crc3_rohc.c
     src/crc_alg/crc4_itu.c
+    src/crc_alg/crc5_epc.c
+    src/crc_alg/crc5_itu.c
+    src/crc_alg/crc5_usb.c
     src/crc_alg/crc8.c
     )
 
