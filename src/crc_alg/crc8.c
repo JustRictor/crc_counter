@@ -1,4 +1,4 @@
-#include "crc_counter/crc_alg/crc8_ccitt.h"
+#include "crc_counter/crc_alg/crc8.h"
 #include "crc_counter/crc_polynomes.h"
 
 uint8_t crc8(const uint8_t *data, uint64_t len)

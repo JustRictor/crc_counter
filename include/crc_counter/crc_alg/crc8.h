@@ -1,5 +1,5 @@
-#ifndef __CRC8_CCITT_H_
-#define __CRC8_CCITT_H_
+#ifndef __CRC8_H_
+#define __CRC8_H_
 
 #include <stdint.h>
 
